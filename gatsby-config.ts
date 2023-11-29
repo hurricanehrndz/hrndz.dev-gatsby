@@ -5,17 +5,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.mjs
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
-    siteImage: `/banner.jpg`,
+    siteTitle: `HurricaneHrndz`,
+    siteTitleAlt: `HurricaneHrndz's Tech Ramblings Blog`,
+    siteHeadline: `Hurricanehrndz's Blog`,
+    siteUrl: `https://hrndz.dev`,
+    siteDescription: `Madman'd non-sensical ramblings on technology`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@hurricanehrndz`,
+    siteImage: `/banner.jpg`,
   },
   trailingSlash: `always`,
   plugins: [
@@ -36,13 +33,14 @@ const config: GatsbyConfig = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/hurricanehrndz`,
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `Instagram`,
+            url: `https://www.instagram.com/hurricanehrndz/`,
           },
         ],
+        showLineNumbers = true,
       },
     },
     {
@@ -54,9 +52,11 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `HurricaneHrndz's Tech Ramblings Blog`,
+        short_name: `HurricaneHrndz`,
+        description: `Madman'd non-sensical ramblings on technology`,
+        start_url: `/`,
+
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
